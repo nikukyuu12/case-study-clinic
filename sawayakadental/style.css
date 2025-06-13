@@ -1,0 +1,581 @@
+/* PC-SP共通 */
+
+body {
+  font-family: "Zen Maru Gothic", "M PLUS Rounded 1c", "Meiryo", sans-serif;
+  font-size: 18px;
+}
+
+
+/* ---PC 用ｽﾀｲﾙ ----------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  
+
+body {
+  margin: 0 auto;
+  
+}
+
+/* ----------------------------------------------------header--- */
+header {
+  background-color: #effaff;
+  
+}
+
+#header-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  align-items: center;
+  margin: auto;
+}
+
+#address {
+  display: flex;
+  
+}
+
+
+#logo-top {
+  width: auto;
+  
+}
+.logo {
+  width: 190px;
+  height: 60px;
+}
+
+.tel {
+  margin: 0 0 0 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close-daytime {
+  text-align: right;
+  margin-top: 10px;
+}
+
+
+.navlink-left, .navlink-right {
+  width: 144px;
+  font-size: 20px;
+  margin: 25px 0  0 10px;
+  
+  
+}
+
+.navlink-left > button, .navlink-right > button {
+  width: 144px;
+  height: 28px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  border: #23C7D6 3px solid;
+  border-radius: 20px;
+}
+
+.navlink-left > button > a, .navlink-right > button > a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlink-left > button > a:link, .navlink-right > button > a:link, .navinfomation > button > a:link {  
+  color: black;
+}
+
+.navlink-left > button:hover, .navlink-right > button:hover {
+  background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
+
+}
+
+.navinfomation {
+  margin: 25px 0 0 10px;
+}
+
+.navinfomation > button {
+  display: flex;
+  width: 180px;
+  height: 30px;
+  margin-bottom: 5px;
+  background: linear-gradient(90deg, #23C7D6 35%, #ffffff 35%);
+  border: #23C7D6 3px solid;
+  border-radius: 20px;
+}
+
+.navinfomation > button > a {
+  text-decoration: none;
+  color: black;
+  margin: auto;
+}
+
+.navinfomation > button:hover {
+  background: linear-gradient(90deg, #23C7D6 35%, #ffffff 35%);
+  background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
+}
+
+#booking, #mail {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px 0px 10px;
+}
+
+
+/* -------------------------------------------main--- */
+article {
+  background-color: #ffffff;
+  position: relative;
+  
+}
+
+
+#mainimg {
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+
+.toph1, .toph1-2 {
+  font-size: 40px;
+  color: #23C7D6;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #ffffff;
+}
+
+.toph1 {
+  margin-top: 30px;
+  position: absolute;
+  top: 10px;
+  right: 278px;
+}
+
+.toph1-2 {
+  margin-top: 10px;
+  position: absolute;
+  top: 80px;
+  right: 180px;
+}
+
+/* --------------------------------------------科目バー--- */
+#kamoku { 
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#mainimg2 {
+  
+  width: 100%;
+  opacity: 0.15;
+  margin-bottom: 20px;
+  
+}
+
+.kamokubar1 {
+  width: 40%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+.kamokubar1 > hr {
+  width: 60%;
+  height: 3px;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  
+  background-color: #ffffff;
+  border: none;
+  
+}
+
+.kamokuname1 {
+  width: 8rem;
+  height: 43px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  left: 70%;
+
+}
+
+
+.kamokubar2 {
+  width: 45%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  position: absolute;
+  top: 202px;
+  left: 0px;
+}
+
+.kamokubar2 > hr {
+  width: 65%;
+  height: 3px;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  
+  background-color: #ffffff;
+  border: none;
+  
+}
+
+.kamokuname2 {
+  width: 8rem;
+  height: 43px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  left: 70%;
+
+}
+
+.kamokubar3 {
+  width: 50%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  position: absolute;
+  top: 304px;
+  left: 0px;
+}
+
+.kamokubar3 > hr {
+  width: 70%;
+  height: 3px;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  
+  background-color: #ffffff;
+  border: none;
+  
+}
+
+.kamokuname3 {
+  width: 8rem;
+  height: 43px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  left: 75%;
+
+}
+
+.kamokubar4 {
+  width: 55%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  position: absolute;
+  top: 406px;
+  left: 0px;
+}
+
+.kamokubar4 > hr {
+  width: 75%;
+  height: 3px;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  left: 0px;
+  
+  background-color: #ffffff;
+  border: none;
+  
+}
+
+.kamokuname4 {
+  width: 8rem;
+  height: 43px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  left: 80%;
+
+}
+
+
+/* ------------------------------------------conceptバー大切３つ--- */
+
+.title1 {
+  width: 55%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  position: absolute;
+  top: 100px;
+  right: 0px;
+}
+
+.title1 > hr {
+  width: 45%;
+  height: 3px;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  right: 0px;
+  
+  background-color: #ffffff;
+  border: none;
+  
+}
+
+.titlename1 {
+  width: 20rem;
+  height: 43px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  right: 60%;
+
+}
+
+
+.title2 {
+  width: 45%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  position: absolute;
+  top: 217px;
+  right: 0px;
+}
+
+.title2 > hr {
+  width: 35%;
+  height: 3px;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  right: 0px;
+  
+  background-color: #ffffff;
+  border: none;
+  
+  
+}
+
+.titlename2 {
+  width: 20rem;
+  height: 43px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  right: 50%;
+
+}
+
+.title3 {
+  width: 35%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  position: absolute;
+  top: 334px;
+  right: 0px;
+}
+
+.title3 > hr {
+  width: 25%;
+  height: 3px;
+  align-items: center;
+  position: absolute;
+  top: 27px;
+  right: 0px;
+  
+  background-color: #ffffff;
+  border: none;
+  
+}
+
+.titlename3 {
+  width: 15rem;
+  height: 43px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 24px;
+  align-items: center;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  right: 50%;
+
+}
+
+
+#kamokubutton {
+  position: absolute;
+  top: 466px;
+  right: 178px;
+}
+
+/* ---------------------------------------------------------特徴 01-02--- */
+#tokutyou {
+  position: absolute;
+  top: 550px;
+  width: 80%;
+  height: 316px;
+  
+} 
+
+#tokutyou > table {
+  margin: auto;
+}
+
+
+.tabletitle {
+  font-size: 36px;
+  color: #715D9C;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+  width: 516px;
+  height: 85px;
+  margin-left: 40px;
+}
+
+.number {
+  font-size: 120px;
+  color: #23C7D6;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #715D9C;
+  margin-left: 40px;
+}
+
+
+/* ----------------------------------------------------------------news--- */
+#news {
+  position: relative;
+  
+}
+
+
+.bar-top {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  top: 0px;
+}  
+
+.bar-bottom {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0px;
+  top: 750px;
+}
+
+.bar-top > hr, .bar-bottom > hr {
+  background-color: #ffffff;
+  border: none;
+  height: 3px;
+  
+}
+
+.news-topics {
+  position: absolute;
+  top: 50px;
+  margin: 0 150px;
+  
+}
+
+.news-topics2 {
+  position: absolute;
+  top: 380px;
+  margin: 0 150px;
+}
+
+.news-title {
+  margin: 30px 0px;
+  font-size: 48px;
+  font-weight: bold;
+  
+}
+
+.news-title::after {
+  content: url("images/news-after-bar.png");
+  margin-left: 20px;
+  
+}
+
+.news1s, .news2s, .news3s {
+  display: flex;
+  height: 40px;
+  
+}
+.news-topics > hr, .news-topics2 > hr {
+  background-color: #23C7D6;
+  height: 1px;
+  border: none;
+  flex-direction: row;
+}
+
+.category, .news-report {
+  margin-left: 50px;
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- SP用 ﾃﾞｻﾞｲﾝ------------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+  
+}
