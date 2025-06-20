@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>さわやか歯科クリニック</title>
+    <meta name="description" content="さわやか歯科クリニックの公式サイトです。">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <header>
+      <div id="header-inner">
+        <div id="logo-top">
+          <a href="index.html" id="logo"><img src="images/logo2.png" alt="トップページに戻る" class="logo"></a>
+          <P class="tel">TEL 00-0000-0000</P>
+        </div>
+        <div id="address">
+          <p class="close-daytime">休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p>
+            
+          <nav class="navlink-left">
+            <button><a href="clinicguide.html">当院について</a></button>
+            <button><a href="clinicguide.html#subject">診療科目</a></button>
+          </nav>
+          <nav class="navlink-right">
+            <button><a href="clinicguide.html#staff">スタッフ</a></button>
+            <button><a href="news.html">News</a></button>
+          </nav>
+          <nav class="navinfomation">
+            <button><img src="images/booking.png" id="booking"><a href="contact.html">問合せフォーム</a></button>
+            <button><img src="images/mail.png" id="mail"><a href="bookingday.html">予約フォーム</a></button>
+          </nav>
+        </div>
+      </div>
+      <!--- sp用nav  --->
+      <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+      
+      <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
+      <img class="menu-sp" src="images/booking-nav.png" alt="予約"><a href="bookingday.html"></a>
+      <img class="menu-sp" src="images/mail-nav.png" alt="mail"><a href="contact.html"></a>
+
+      <nav id="sp-nav">
+        <img id="close" src="images/close.png" alt="navclose" onclick="document.getElementById('sp-nav').style.display = 'none'">
+        <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+        
+        <button><a class="menu" href="clinicguide.html" onclick="document.getElementById('sp-nav').style.display = 'none'">当院について</a></button>
+        <button><a class="menu" href="clinicguide.html#subject" onclick="document.getElementById('sp-nav').style.display = 'none'">診療科目</a></button>
+        <button><a class="menu" href="clinicguide.html#staff" onclick="document.getElementById('sp-nav').style.display = 'none'">スタッフ</a></button>
+        <button><a class="menu" href="news.html" onclick="document.getElementById('sp-nav').style.display = 'none'">News</a></button>
+
+      </nav>
+    </header>
+    
+    <main>
+      <article>
+        <!-- ご挨拶 + 院内 -->
+        <section id="consept-guide">
+          <div id="concept-greetings">
+            <img src="images/innnai-top.jpg" alt="診察台">
+            <p>みなさま、こんにちは。<br>
+              「さわやか歯科クリニック」院長の松本 貴子です。<br>
+              当院は、小さなお子さまからご年配の方まで、安心して通える歯科クリニック を目指しています。歯医者に苦手意識を持つ方にも、やさしく丁寧な治療 を提供し、リラックスできる環境を整えています。痛みを抑えた治療 や わかりやすい説明 を心がけ、不安なく通えるよう努めています。
+              また、歯の健康は全身の健康につながる ため、治療だけでなく 予防歯科 にも力を入れています。定期検診やクリーニングを通じて、みなさまの大切な歯を守り続けるお手伝いをしていきます。
+              地域のみなさまにとって、「ここなら安心して通える」 と思っていただけるクリニックを目指し、スタッフ一同、努力してまいります。どうぞよろしくお願いいたします。
+            </p>            
+          </div>
+          <div id="clinic-img">
+            <img src="images/innnai-1.jpg" alt="模型">
+            <img src="images/innnai-2.jpg" alt="受付">
+            <img src="images/innnai-3.jpg" alt="治療具">
+            <img src="images/innnai-4.jpg" alt="待合">
+          </div>
+        </section>
+        <!-- 科目-大切 -->
+        <section id="kamoku-syousai">
+          <div id="taisetu3s">
+            <div class="taisetu">
+              <img src="images/maru-itaminsukunai.png" alt="歯ｲﾗｽﾄ">
+              <p>麻酔の工夫や最新の技術を取り入れ、痛みを最小限に抑えた治療 を心がけています。歯医者が苦手な方も、安心して通っていただけるよう配慮しています。</p>
+            </div>
+            <div class="taisetu">
+              <img src="images/maru-yobousika.png" alt="衛生士ｲﾗｽﾄ">
+              <p>「痛くなったら行く」のではなく、むし歯や歯周病を防ぐ予防ケア を大切にしています。定期検診・クリーニングで、大切な歯を一生涯守ります。</p>
+            </div>
+            <div class="taisetu">
+              <img src="images/maru-seiketu.png" alt="歯ﾌﾞﾗｼ用具">
+              <p>患者さんが安心して治療を受けられるよう、徹底した衛生管理 と 最新の歯科医療機器 を導入。快適な環境で、質の高い治療を提供します。</p>
+            </div>
+          </div>
+          <!-- 科目詳細 -->
+          <div id="kamoku-annnai">
+            <div class="kamoku-bunnrui">
+              <img src="images/kamoku-syousai-ippannsika.png" alt="衛生士と子供">
+              <p>むし歯や歯周病の治療を行い、患者さんの健康な歯を守るための基本的なケア を提供します。痛みを抑えた治療を心がけ、できるだけ歯を残す治療 を大切にしています。
+                <br>
+                <br>むし歯の治療・詰め物・かぶせ物
+                <br>歯周病の治療・歯石除去
+                <br>神経の治療（根管治療）
+              </p>
+            </div>
+            <div class="kamoku-bunnrui">
+              <img src="images/kamoku-syousai-syounisika.png" alt="くまと歯ﾌﾞﾗｼ">
+              <p>お子さまの歯の健康を守るために、むし歯の予防と治療を中心に、楽しく通える歯医者 を目指しています。初めての歯医者さんでも安心できるよう、やさしく丁寧な対応を心がけています。
+                <br>
+                <br>乳歯のむし歯治療
+                <br>シーラント（むし歯予防処置）
+                <br>フッ素塗布・歯磨き指導
+              </p>
+            </div>
+            <div class="kamoku-bunnrui">
+              <img src="images/kamoku-syousai-koukuugeka.png" alt="歯の模型">
+              <p>親知らずの抜歯や顎関節症など、お口の中の外科的な治療を専門的に行います。痛みや負担の少ない治療を心がけ、患者さん一人ひとりに合わせた適切な治療 を提供します。
+                <br>
+                <br>親知らずの抜歯
+                <br>顎関節症の治療
+                <br>口内炎・粘膜疾患の診療
+              </p>
+            </div>
+            <div class="kamoku-bunnrui">
+              <img src="images/kamoku-syousai-yobousika.png" alt="歯ﾌﾞﾗｼとｺｯﾌﾟ">
+              <p>「痛くなってから行く」のではなく、むし歯や歯周病を防ぐことを目的とした診療です。定期的な検診とクリーニングで、お口の健康を長く保ちましょう。
+                <br>
+                <br>定期健診・クリーニング（ＰＭＴＣ）
+                <br>フッ素塗布で歯を強くする
+                <br>歯周病の予防と早期発見
+              </p>
+            </div>
+          </div>  
+        </section>
+          <!-- staff -->
+        <section id="staff">
+          <div id="line">
+            <div class="line-1"><hr></div>
+            <div class="line-2"><hr></div>
+            <div class="line-3"><hr></div>
+          </div>
+          <div id="staff-annnai">
+            <img src="images/doctor2_matsumoto.jpg"  alt="Dr.松本">
+            <div class="staff-name">
+              <pre>院長  松本 貴子</pre><br>
+              <div class="goaisatu">
+                <p>患者さん一人ひとりに寄り添い、安心して通える歯科医院を目指しています。痛みの少ない治療と、わかりやすい説明を心がけ、地域の皆さまのお口の健康をサポートいたします。歯医者が苦手な方も、リラックスできるよう丁寧に対応いたしますので、どうぞ安心してご来院ください。
+                  <br><br>得意な治療: むし歯治療・予防歯科・小児歯科
+                  <br>趣味: 旅行・読書・カフェ巡り
+                </p>
+              </div>
+            </div>
+          </div> 
+          <div id="line2">
+            <div class="line-1"><hr></div>
+            <div class="line-2"><hr></div>
+            <div class="line-3"><hr></div>
+          </div>
+          
+          <div id="staff-annnai-2">
+            <img src="images/doctor1_tanaka.jpg"  alt="Dr.田中">
+            <div class="staff-name2">
+              <pre>Dr. 田中健吾</pre><br>
+              <div class="goaisatu">
+                <p>お口の健康は、全身の健康にも大きく関わっています。患者さんが長く健康な歯を維持できるよう、最適な治療とアドバイスを提供いたします。治療に対する不安や疑問があれば、何でもお気軽にご相談ください。
+                  <br><br>得意な治療: 口腔外科・親知らずの抜歯・歯周病治療
+                  <br>趣味: ランニング・映画鑑賞・登山
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="line">
+            <div class="line-1"><hr></div>
+            <div class="line-2"><hr></div>
+            <div class="line-3"><hr></div>
+          </div>
+          <div id="staff-annnai-3">
+            <img src="images/staff1suzuki.jpg"  alt="st.鈴木">
+            <div class="staff-name3">
+              <pre>Staff. 鈴木由佳</pre><br>
+              <div class="goaisatu">
+                <p>患者さんのお口の健康を守るため、クリーニングや予防ケアを担当しています。歯磨きのコツや、デンタルフロスの使い方など、日々のケアについてもお伝えしていますので、お気軽にご相談ください。
+                  <br><br>得意な分野: クリーニング・ホワイトニング・歯磨き指導
+                  <br>趣味: ヨガ・お菓子作り・音楽鑑賞
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="line3">
+            <div class="line-1"><hr></div>
+            <div class="line-2"><hr></div>
+            <div class="line-3"><hr></div>
+          </div>
+        </section>
+      </article>
+
+      <footer>
+        <div id="footer-innner">
+          <div id="footer-address">
+            <a href="index.html" id="logo"><img src="images/logo2.png" alt="ロゴ" class="logo"></a>
+            <P>〒105-0001<br>東京都港区虎ﾉ門1丁目3-1</P>
+            <P>TEL 00-0000-0000</P>
+            <p>休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p>
+          </div>
+          <div id="map">
+            <p class="parking">駐車場ございません<br>近隣のパーキングをご利用ください。</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6486.358754641794!2d139.74691337632353!3d35.670094730584836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9278cad6bd%3A0xf8a15f79423fdee0!2z44CSMTA1LTAwMDEg5p2x5Lqs6YO95riv5Yy66JmO44OO6ZaA77yR5LiB55uu77yT4oiS77yR!5e0!3m2!1sja!2sjp!4v1750134824355!5m2!1sja!2sjp" width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+          </div>
+        </div>
+        <p id="copyright">&copy;2025 SawayakaClinic,All Rights Reserved.</p>
+      </footer>
+      
+    </main>
+  </body>  
+</html> 
