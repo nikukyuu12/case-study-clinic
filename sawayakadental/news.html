@@ -32,13 +32,18 @@
           </nav>
         </div>
       </div>
-       <!--- sp用nav  --->
-      <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+      <!--- sp用nav  --->
+      <div id="header-inner-sp">
+        <div id="header-inner-logo">
+          <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+        </div> 
+        <div id="header-inner-nav">
+          <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
+          <a href="bookingday.html"><img class="menu-sp" src="images/booking-nav.png" alt="予約"></a>
+          <a href="contact.html"><img class="menu-sp" src="images/mail-nav.png" alt="mail"></a>
+        </div>
+      </div>
       
-      <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
-      <img class="menu-sp" src="images/booking-nav.png" alt="予約"><a href="bookingday.html"></a>
-      <img class="menu-sp" src="images/mail-nav.png" alt="mail"><a href="contact.html"></a>
-
       <nav id="sp-nav">
         <img id="close" src="images/close.png" alt="navclose" onclick="document.getElementById('sp-nav').style.display = 'none'">
         <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
@@ -54,50 +59,35 @@
     <main>
       <section id="news-html">
         <!-- 外枠フレーム -->
-            <div id="outer-frame">
-            
-              <div id="news-top-side">
+        <div id="outer-frame">
+          <div id="news-top-side">
+            <div id="news-inner">
+              <div id="news-title">
                 <div id="news-top">
-                  
+                  <div id="news-top-in">
                   <div class="box-1">
                     <h1>News</h1>
                   </div>
+                  <a href="newslineup.html">▶記事一覧はこちら</a>
+                  </div>
+                  <div id="category-title">
+                    <h2>お知らせ</h2>
+                    <div class="hr-1"><hr></div>
+                    <p>さわやか歯科クリニックのホームページを開設しました！</p>
+                  </div>
+                </div>  
+                <div id="aikyatti">
                   <img src="images/news.jpg" alt="花レター">
-                
-                <div id="news-kiji">
-                  <h2>お知らせ</h2>
-                  <div class="hr-1"><hr></div>
-                  <p>さわやか歯科クリニックのホームページを開設しました！</p>
-                  <div class="hr-2"><hr></div>
-                  <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など、皆さまにとって役立つ情報を発信してまいります。今後も、予防歯科やお口の健康に関する情報を更新していきますので、ぜひチェックしてください！</p>
-                  <div class="hr-1"><hr></div>
-                </div>
-                </div>
-                <div id="sidebar">
-                  
-                    <div class="box-1">
-                    <h1>category</h1>
-                    </div>
-                  <div class="category-1">
-                    <h4>お知らせ</h4>
-                    <div class="hr-1"><hr></div>
-                    <p>25.01.01  さわやか歯科クリニックの...</p>
-                    <p>25.01.01  さわやか歯科クリニックの...</p>
-                    <p>25.01.01  さわやか歯科クリニックの...</p>
-                    <div class="hr-1"><hr></div>
-                  </div>
-                  <div class="category-1">
-                    <h4>豆知識</h4>
-                    <div class="hr-1"><hr></div>
-                    <p>25.01.01  定期健診で健康な...</p>
-                    <p>25.01.01  正しい歯磨きのコツ！...</p>
-                    <p>25.01.01  さわやか歯科クリニックの...</p>
-                    <div class="hr-1"><hr></div>
-                  </div>
-                  <div class="hr-3"><hr></div>
                 </div>
               </div>
+              <div id="news-kiji">
+                <div class="hr-2"><hr></div>
+                <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など、皆さまにとって役立つ情報を発信してまいります。今後も、予防歯科やお口の健康に関する情報を更新していきますので、ぜひチェックしてください！</p>
+                <div class="hr-2"><hr></div>
+              </div>
             </div>
+          </div>
+        </div>
       </section>
 
       <footer>

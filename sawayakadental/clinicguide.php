@@ -1,67 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>さわやか歯科クリニック</title>
-    <meta name="description" content="さわやか歯科クリニックの公式サイトです。">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-  </head>
-
-  <body>
-    <header>
-      <div id="header-inner">
-        <div id="logo-top">
-          <a href="index.html" id="logo"><img src="images/logo2.png" alt="トップページに戻る" class="logo"></a>
-          <P class="tel">TEL 00-0000-0000</P>
-        </div>
-        <div id="address">
-          <p class="close-daytime">休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p>
-            
-          <nav class="navlink-left">
-            <button><a href="clinicguide.html">当院について</a></button>
-            <button><a href="clinicguide.html#subject">診療科目</a></button>
-          </nav>
-          <nav class="navlink-right">
-            <button><a href="clinicguide.html#staff">スタッフ</a></button>
-            <button><a href="news.html">News</a></button>
-          </nav>
-          <nav class="navinfomation">
-            <button><img src="images/booking.png" id="booking"><a href="contact.html">問合せフォーム</a></button>
-            <button><img src="images/mail.png" id="mail"><a href="bookingday.html">予約フォーム</a></button>
-          </nav>
-        </div>
-      </div>
-      <!--- sp用nav  --->
-      <div id="header-inner-sp">
-        <div id="header-inner-logo">
-          <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
-        </div> 
-        <div id="header-inner-nav">
-          <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
-          <a href="bookingday.html"><img class="menu-sp" src="images/booking-nav.png" alt="予約"></a>
-          <a href="contact.html"><img class="menu-sp" src="images/mail-nav.png" alt="mail"></a>
-        </div>
-      </div>
-      
-      <nav id="sp-nav">
-        <img id="close" src="images/close.png" alt="navclose" onclick="document.getElementById('sp-nav').style.display = 'none'">
-        <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
-        
-        <button><a class="menu" href="clinicguide.html" onclick="document.getElementById('sp-nav').style.display = 'none'">当院について</a></button>
-        <button><a class="menu" href="clinicguide.html#kamoku-syousai" onclick="document.getElementById('sp-nav').style.display = 'none'">診療科目</a></button>
-        <button><a class="menu" href="clinicguide.html#staff" onclick="document.getElementById('sp-nav').style.display = 'none'">スタッフ</a></button>
-        <button><a class="menu" href="news.html" onclick="document.getElementById('sp-nav').style.display = 'none'">News</a></button>
-
-      </nav>
-    </header>
+<?php get_header(); ?>
     
     <main>
       <article>
         <!-- ご挨拶 + 院内 -->
         <section id="consept-guide">
           <div id="concept-greetings">
-            <img src="images/innnai-top.jpg" alt="診察台">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/innnai-top.jpg" alt="診察台">
             <div id="concept">
               <h1>地域の皆様が安心して通える、<br>家族みんなのための歯科医院</h1>
               <p>みなさま、こんにちは。<br>
@@ -73,32 +17,32 @@
             </div>           
           </div>
           <div id="clinic-img">
-            <img src="images/innnai-1.jpg" alt="模型">
-            <img src="images/innnai-2.jpg" alt="受付">
-            <img src="images/innnai-3.jpg" alt="治療具">
-            <img src="images/innnai-4.jpg" alt="待合">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/innnai-1.jpg" alt="模型">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/innnai-2.jpg" alt="受付">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/innnai-3.jpg" alt="治療具">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/innnai-4.jpg" alt="待合">
           </div>
         </section>
         <!-- 科目-大切 -->
         <section id="kamoku-syousai">
           <div id="taisetu3s">
             <div class="taisetu">
-              <img src="images/maru-itaminsukunai.png" alt="歯ｲﾗｽﾄ">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/maru-itaminsukunai.png" alt="歯ｲﾗｽﾄ">
               <p>麻酔の工夫や最新の技術を取り入れ、痛みを最小限に抑えた治療 を心がけています。歯医者が苦手な方も、安心して通っていただけるよう配慮しています。</p>
             </div>
             <div class="taisetu">
-              <img src="images/maru-yobousika.png" alt="衛生士ｲﾗｽﾄ">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/maru-yobousika.png" alt="衛生士ｲﾗｽﾄ">
               <p>「痛くなったら行く」のではなく、むし歯や歯周病を防ぐ予防ケア を大切にしています。定期検診・クリーニングで、大切な歯を一生涯守ります。</p>
             </div>
             <div class="taisetu">
-              <img src="images/maru-seiketu.png" alt="歯ﾌﾞﾗｼ用具">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/maru-seiketu.png" alt="歯ﾌﾞﾗｼ用具">
               <p>患者さんが安心して治療を受けられるよう、徹底した衛生管理 と 最新の歯科医療機器 を導入。快適な環境で、質の高い治療を提供します。</p>
             </div>
           </div>
           <!-- 科目詳細 -->
           <div id="kamoku-annnai">
             <div class="kamoku-bunnrui">
-              <img src="images/kamoku-syousai-ippannsika.png" alt="衛生士と子供">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/kamoku-syousai-ippannsika.png" alt="衛生士と子供">
               <p>むし歯や歯周病の治療を行い、患者さんの健康な歯を守るための基本的なケア を提供します。痛みを抑えた治療を心がけ、できるだけ歯を残す治療 を大切にしています。
                 <br>
                 <br>むし歯の治療・詰め物・かぶせ物
@@ -107,7 +51,7 @@
               </p>
             </div>
             <div class="kamoku-bunnrui">
-              <img src="images/kamoku-syousai-syounisika.png" alt="くまと歯ﾌﾞﾗｼ">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/kamoku-syousai-syounisika.png" alt="くまと歯ﾌﾞﾗｼ">
               <p>お子さまの歯の健康を守るために、むし歯の予防と治療を中心に、楽しく通える歯医者 を目指しています。初めての歯医者さんでも安心できるよう、やさしく丁寧な対応を心がけています。
                 <br>
                 <br>乳歯のむし歯治療
@@ -116,7 +60,7 @@
               </p>
             </div>
             <div class="kamoku-bunnrui">
-              <img src="images/kamoku-syousai-koukuugeka.png" alt="歯の模型">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/kamoku-syousai-koukuugeka.png" alt="歯の模型">
               <p>親知らずの抜歯や顎関節症など、お口の中の外科的な治療を専門的に行います。痛みや負担の少ない治療を心がけ、患者さん一人ひとりに合わせた適切な治療 を提供します。
                 <br>
                 <br>親知らずの抜歯
@@ -125,7 +69,7 @@
               </p>
             </div>
             <div class="kamoku-bunnrui">
-              <img src="images/kamoku-syousai-yobousika.png" alt="歯ﾌﾞﾗｼとｺｯﾌﾟ">
+              <img src="<?php echo get_template_directory_uri(); ?>/images/kamoku-syousai-yobousika.png" alt="歯ﾌﾞﾗｼとｺｯﾌﾟ">
               <p>「痛くなってから行く」のではなく、むし歯や歯周病を防ぐことを目的とした診療です。定期的な検診とクリーニングで、お口の健康を長く保ちましょう。
                 <br>
                 <br>定期健診・クリーニング（ＰＭＴＣ）
@@ -143,7 +87,7 @@
             <div class="line-3"><hr></div>
           </div>
           <div id="staff-annnai">
-            <img src="images/doctor2_matsumoto.jpg"  alt="Dr.松本">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/doctor2_matsumoto.jpg"  alt="Dr.松本">
             <div class="staff-name">
               <pre>院長  松本 貴子</pre><br>
               <div class="goaisatu">
@@ -161,7 +105,7 @@
           </div>
           
           <div id="staff-annnai-2">
-            <img src="images/doctor1_tanaka.jpg"  alt="Dr.田中">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/doctor1_tanaka.jpg"  alt="Dr.田中">
             <div class="staff-name2">
               <pre>Dr. 田中健吾</pre><br>
               <div class="goaisatu">
@@ -178,7 +122,7 @@
             <div class="line-3"><hr></div>
           </div>
           <div id="staff-annnai-3">
-            <img src="images/staff1suzuki.jpg"  alt="st.鈴木">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/staff1suzuki.jpg"  alt="st.鈴木">
             <div class="staff-name3">
               <pre>Staff. 鈴木由佳</pre><br>
               <div class="goaisatu">
@@ -197,23 +141,4 @@
         </section>
       </article>
 
-      <footer>
-        <div id="footer-innner">
-          <div id="footer-address">
-            <a href="index.html" id="logo"><img src="images/logo2.png" alt="ロゴ" class="logo"></a>
-            <P>〒105-0001<br>東京都港区虎ﾉ門1丁目3-1</P>
-            <P>TEL 00-0000-0000</P>
-            <p>休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p>
-          </div>
-          <div id="map">
-            <p class="parking">駐車場ございません<br>近隣のパーキングをご利用ください。</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6486.358754641794!2d139.74691337632353!3d35.670094730584836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b9278cad6bd%3A0xf8a15f79423fdee0!2z44CSMTA1LTAwMDEg5p2x5Lqs6YO95riv5Yy66JmO44OO6ZaA77yR5LiB55uu77yT4oiS77yR!5e0!3m2!1sja!2sjp!4v1750134824355!5m2!1sja!2sjp" width="600" height="270" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
-          </div>
-        </div>
-        <p id="copyright">&copy;2025 SawayakaClinic,All Rights Reserved.</p>
-      </footer>
-      <div id="TOP-button"><img src="images/topbutton.png"></div>
-      <script src="ivent.js"></script>
-    </main>
-  </body>  
-</html> 
+      <?php get_footer(); ?>

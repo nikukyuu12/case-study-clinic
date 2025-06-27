@@ -33,12 +33,17 @@
         </div>
       </div>
       <!--- sp用nav  --->
-      <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+      <div id="header-inner-sp">
+        <div id="header-inner-logo">
+          <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+        </div> 
+        <div id="header-inner-nav">
+          <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
+          <a href="bookingday.html"><img class="menu-sp" src="images/booking-nav.png" alt="予約"></a>
+          <a href="contact.html"><img class="menu-sp" src="images/mail-nav.png" alt="mail"></a>
+        </div>
+      </div>
       
-      <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
-      <img class="menu-sp" src="images/booking-nav.png" alt="予約"><a href="bookingday.html"></a>
-      <img class="menu-sp" src="images/mail-nav.png" alt="mail"><a href="contact.html"></a>
-
       <nav id="sp-nav">
         <img id="close" src="images/close.png" alt="navclose" onclick="document.getElementById('sp-nav').style.display = 'none'">
         <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
@@ -59,19 +64,19 @@
        
         <form>
           <div class="form-box">
-            <label><span>*</span>ご氏名</label>
+            <label><span>*</span>ご氏名</label><br>
             <input type="text" placeholder="名前を入力してください">
           </div>
           <div class="form-box">
-            <label><span>*</span>電話番号</label>
+            <label><span>*</span>電話番号</label><br>
             <input type="text" placeholder="電話番号を入力してください">
           </div>
           <div class="form-box">
-            <label>メール</label>
+            <label>メール</label><br>
             <input type="text" placeholder="メールアドレスを入力してください">
           </div>
           <div class="form-box-area">
-            <label><span>*</span>お問合せ内容</label>
+            <label><span>*</span>お問合せ内容</label><br>
             <textarea>お問合わせ内容を入力してください</textarea>
           </div>
         </form>  

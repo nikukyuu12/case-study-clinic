@@ -33,18 +33,23 @@
         </div>
       </div>
       <!--- sp用nav  --->
-      <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+      <div id="header-inner-sp">
+        <div id="header-inner-logo">
+          <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+        </div> 
+        <div id="header-inner-nav">
+          <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
+          <a href="bookingday.html"><img class="menu-sp" src="images/booking-nav.png" alt="予約"></a>
+          <a href="contact.html"><img class="menu-sp" src="images/mail-nav.png" alt="mail"></a>
+        </div>
+      </div>
       
-      <img class="menu-sp" src="images/spmenu-nav.png" alt="navopen" onclick="document.getElementById('sp-nav').style.display = 'block'">
-      <img class="menu-sp" src="images/booking-nav.png" alt="予約"><a href="bookingday.html"></a>
-      <img class="menu-sp" src="images/mail-nav.png" alt="mail"><a href="contact.html"></a>
-
       <nav id="sp-nav">
         <img id="close" src="images/close.png" alt="navclose" onclick="document.getElementById('sp-nav').style.display = 'none'">
         <a href="index.html" id="logo-sp"><img  src="images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
         
         <button><a class="menu" href="clinicguide.html" onclick="document.getElementById('sp-nav').style.display = 'none'">当院について</a></button>
-        <button><a class="menu" href="clinicguide.html#subject" onclick="document.getElementById('sp-nav').style.display = 'none'">診療科目</a></button>
+        <button><a class="menu" href="clinicguide.html#kamoku-syousai" onclick="document.getElementById('sp-nav').style.display = 'none'">診療科目</a></button>
         <button><a class="menu" href="clinicguide.html#staff" onclick="document.getElementById('sp-nav').style.display = 'none'">スタッフ</a></button>
         <button><a class="menu" href="news.html" onclick="document.getElementById('sp-nav').style.display = 'none'">News</a></button>
 
@@ -55,19 +60,23 @@
       <section id="news-html">
         <!-- 外枠フレーム -->
         <div id="outer-frame">
-            
-          <h1 class="title-news">News</h1>
           <div id="news-top-side">
-            <div id="newslineup-kiji">
-              <div class="kiji-outo">
-                <div class="hr-2"><hr></div>
+            <h1 class="title-news">News</h1>
+            <!-- Tab category 切替 -->
+            <div id="category-tab">
+              <label><input type="radio" name="TAB" checked>記事一覧</label>
+              <div class="tab">
+                <div class="kiji-outo">
+                  <div class="hr-2"><hr></div>
                   <div class="kiji">
                     <img src="images/news.jpg" alt="花レター">
                     <div class="kiji-1">
                       <h3>お知らせ</h3>
                       <p>さわやか歯科クリニックのホームページを開設しました！</p>
-                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など、皆さまにとって役立つ情報を発信してまいります。今後も、予防歯科やお口の健康に関する情報を更新していきますので、ぜひチェックしてください！</p>
-                    </div>  
+                      <div class="hr-2"><hr></div> 
+                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+                    </div>
                   </div> 
                   <div class="hr-2"><hr></div> 
                 </div>
@@ -78,7 +87,9 @@
                     <div class="kiji-1">
                       <h3>豆知識</h3>
                       <p>定期歯科検診で健康な歯を守りましょう！</p>
+                      <div class="hr-2"><hr></div> 
                       <p>毎日の歯磨きだけでは、むし歯や歯周病を完全に防ぐことはむずかしいものです。定期的な歯科検診を...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
                     </div>  
                   </div> 
                   <div class="hr-2"><hr></div> 
@@ -90,7 +101,9 @@
                     <div class="kiji-1">
                       <h3>豆知識</h3>
                       <p>正しい歯磨きのコツ！毎日のケアでむし歯・歯周...</p>
+                      <div class="hr-2"><hr></div> 
                       <p>しっかり歯を磨いているのに、むし歯や歯ぐきの腫れに悩んでいる方も多いのではないでしょうか。...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
                     </div>  
                   </div> 
                   <div class="hr-2"><hr></div> 
@@ -102,7 +115,9 @@
                     <div class="kiji-1">
                       <h3>お知らせ</h3>
                       <p>さわやか歯科クリニックのホームページを開設しました！</p>
-                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など、皆さまにとって役立つ情報を発信してまいります。今後も、予防歯科やお口の健康に関する情報を更新していきますので、ぜひチェックしてください！</p>
+                      <div class="hr-2"><hr></div> 
+                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
                     </div>  
                   </div> 
                   <div class="hr-2"><hr></div> 
@@ -114,41 +129,95 @@
                     <div class="kiji-1">
                       <h3>お知らせ</h3>
                       <p>さわやか歯科クリニックのホームページを開設しました！</p>
-                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など、皆さまにとって役立つ情報を発信してまいります。今後も、予防歯科やお口の健康に関する情報を更新していきますので、ぜひチェックしてください！</p>
+                      <div class="hr-2"><hr></div> 
+                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
                     </div>  
                   </div> 
                   <div class="hr-2"><hr></div> 
-                </div>                    
+                </div> 
               </div>
-
-              <div id="sidebar">
-                <div class="box-1">
-                <h1>category</h1>
+                
+              <label><input type="radio" name="TAB" checked>News</label>
+              <div class="tab">
+                <div class="kiji-outo">
+                  <div class="hr-2"><hr></div>
+                  <div class="kiji">
+                    <img src="images/news.jpg" alt="花レター">
+                    <div class="kiji-1">
+                      <h3>お知らせ</h3>
+                      <p>さわやか歯科クリニックのホームページを開設しました！</p>
+                      <div class="hr-2"><hr></div> 
+                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+                    </div>
+                  </div> 
+                  <div class="hr-2"><hr></div> 
+                </div>
+                <div class="kiji-outo">
+                  <div class="hr-2"><hr></div>
+                  <div class="kiji">
+                    <img src="images/news.jpg" alt="花レター">
+                    <div class="kiji-1">
+                      <h3>お知らせ</h3>
+                      <p>さわやか歯科クリニックのホームページを開設しました！</p>
+                      <div class="hr-2"><hr></div> 
+                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+                    </div>  
+                  </div> 
+                  <div class="hr-2"><hr></div> 
+                </div>
+                <div class="kiji-outo">
+                  <div class="hr-2"><hr></div>
+                  <div class="kiji">
+                    <img src="images/news.jpg" alt="花レター">
+                    <div class="kiji-1">
+                      <h3>お知らせ</h3>
+                      <p>さわやか歯科クリニックのホームページを開設しました！</p>
+                      <div class="hr-2"><hr></div> 
+                      <p>このたび、さわやか歯科クリニックの公式ホームページを開設いたしました！当院の診療案内やクリニックの特徴、診療時間など...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+                    </div>  
+                  </div> 
+                  <div class="hr-2"><hr></div> 
+                </div>
               </div>
-              <div class="category-1">
-                <h4>お知らせ</h4>
-                <div class="hr-1"><hr></div>
-                <p>25.01.01  さわやか歯科クリニックの...</p>
-                <p>25.01.01  さわやか歯科クリニックの...</p>
-                <p>25.01.01  さわやか歯科クリニックの...</p>
-                <div class="hr-1"><hr></div>
+                
+              <label><input type="radio" name="TAB" checked>豆知識</label>
+              <div class="tab">
+                <div class="kiji-outo">
+                  <div class="hr-2"><hr></div>
+                  <div class="kiji">
+                    <img src="images/news-mame.png" alt="歯ｲﾗｽﾄ">
+                    <div class="kiji-1">
+                      <h3>豆知識</h3>
+                      <p>定期歯科検診で健康な歯を守りましょう！</p>
+                      <div class="hr-2"><hr></div> 
+                      <p>毎日の歯磨きだけでは、むし歯や歯周病を完全に防ぐことはむずかしいものです。定期的な歯科検診を...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+                    </div>  
+                  </div> 
+                  <div class="hr-2"><hr></div> 
+                </div>
+                <div class="kiji-outo">
+                  <div class="hr-2"><hr></div>
+                  <div class="kiji">
+                    <img src="images/news-mame2.jpg" alt="歯模型">
+                    <div class="kiji-1">
+                      <h3>豆知識</h3>
+                      <p>正しい歯磨きのコツ！毎日のケアでむし歯・歯周...</p>
+                      <div class="hr-2"><hr></div> 
+                      <p>しっかり歯を磨いているのに、むし歯や歯ぐきの腫れに悩んでいる方も多いのではないでしょうか。...</p>
+                      <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+                    </div>  
+                  </div> 
+                  <div class="hr-2"><hr></div> 
+                </div>
               </div>
-              <div class="category-1">
-                <h4>豆知識</h4>
-                <div class="hr-1"><hr></div>
-                <p>25.01.01  定期健診で健康な...</p>
-                <p>25.01.01  正しい歯磨きのコツ！...</p>
-                <p>25.01.01  さわやか歯科クリニックの...</p>
-                <div class="hr-1"><hr></div>
-              </div>
-              <div class="hr-3"><hr></div>
             </div>
           </div>
-          <div id="imgbar">
-            <img src="images/newslineup-barbottom.png" alt="棒線">
-          </div>
         </div>
-        
       </section>
 
       <footer>
