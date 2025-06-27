@@ -27,7 +27,7 @@
           </nav>
           <nav class="navlink-right">
             <button><a href="<?php echo home_url(); ?>/clinicguide/#staff">スタッフ</a></button>
-            <button><a href="<?php echo home_url(); ?>/news.html">News</a></button>
+            <button><a href="<?php echo home_url(); ?>/category/news">News</a></button>
           </nav>
           <nav class="navinfomation">
             <button><img src="<?php echo get_template_directory_uri(); ?>/images/booking.png" id="booking"><a href="<?php echo home_url(); ?>/contact">問合せフォーム</a></button>

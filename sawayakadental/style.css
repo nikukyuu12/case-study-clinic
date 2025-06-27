@@ -1,3 +1,17 @@
+/*
+Theme Name: SawayakaDentalClinic
+Theme URI: https://www.sawayakaclinic.net/
+Description: さわやか歯科ｸﾘﾆｯｸ公式ｻｲﾄ
+Version: 1.0.0
+Author: ｍ
+Author URI: https://www.sawayakaclinic.net/
+*/
+
+
+
+
+
+
 /* PC-SP共通 */
 
 body {
@@ -132,7 +146,7 @@ header {
 
 /* -------------------------------------------main--- */
 main {
-  margin-top: 105px;
+  margin-top: 75px;
 }
 
 article {
@@ -509,7 +523,7 @@ position: relative;
   margin-left: 20px;
 }
 
-.news1s, .news2s, .news3s {
+.news1s {
   height: 30px;
   padding: 0  30px;
   margin: 0 50px;

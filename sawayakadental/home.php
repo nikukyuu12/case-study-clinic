@@ -76,40 +76,51 @@
           <div id="newses">
           
           <div class="news-topics">
-            <h1 class="news-title">NEWS</h1>
-            <div class="news1s">
-              <p class="news-report">2025/07/01 さわやか歯科クリニックのホームページを開設しました！</p>               
-              <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+            <h1 class="news-title">NEWS</h1>           
+              <?php 
+              $args = array(
+                'post_type' => 'post',
+                'category_name' => 'news',
+                'posts_per_page' => 3,
+              );
+              $posts =get_posts($args);
+              ?>
+
+              <?php  foreach($posts as $post): ?>
+              <?php  setup_postdata($post); ?> 
+              <div class="news1s"> 
+              <p class="news-report"><?php echo get_the_date(); ?>&ensp;&ensp;&ensp;
+              <?php echo the_title(); ?></P>
+              <div class="news-link"><a href="<?php echo get_permalink(); ?>">▶ 詳細はこちら</a></div>  
             </div>
             <hr>
-            <div class="news2s">
-              <p class="news-report">2025/05/01 休診日のお知らせ</p>
-              <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
-            </div>
-            <hr>
-            <div class="news3s">
-              <p class="news-report">2025/03/01 営業時間のお知らせ</p>                
-              <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
-            </div>
-            <hr>
+            <?php endforeach; ?>
+            <?php wp_reset_postdata(); ?>
           </div>
+
           <div class="news-topics2">
             <h1 class="news-title">Other</h1>
-            <div class="news1s">
-              <p class="news-report">2025/07/01 定期歯科検診で健康な歯を守りましょう！</p>               
-              <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
+            <?php 
+              $args = array(
+                'post_type' => 'post',
+                'category_name' => 'other',
+                'posts_per_page' => 3,
+              );
+              $posts =get_posts($args);
+              ?>
+
+              <?php  foreach($posts as $post): ?>
+              <?php  setup_postdata($post); ?> 
+              <div class="news1s"> 
+              <p class="news-report"><?php echo get_the_date(); ?>&ensp;&ensp;&ensp;
+              <?php echo the_title(); ?></P>
+              <div class="news-link"><a href="<?php echo get_permalink(); ?>">▶ 詳細はこちら</a></div>  
             </div>
             <hr>
-            <div class="news2s">
-              <p class="news-report">2025/07/01 正しい歯磨きのコツ！毎日のケアでむし歯・歯周病を防ごう</p>
-              <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
-            </div>
-            <hr>
-            <div class="news3s">
-              <p class="news-report">2025/07/01 定期歯科検診で健康な歯を守りましょう！</p>                
-              <div class="news-link"><a href="news.html">▶ 詳細はこちら</a></div>
-            </div>
-            <hr>
+            <?php endforeach; ?>
+            <?php wp_reset_postdata(); ?>
+          </div>
+          
           </div>
           </div>
           <div class="bar-bottom">
