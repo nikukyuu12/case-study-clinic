@@ -18,9 +18,10 @@
           <a href="<?php echo esc_url(home_url('/')); ?>" id="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo2.png" alt="トップページに戻る" class="logo"></a>
           
         </div>
+        
         <div id="address">
           <!-- <p class="close-daytime">休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p> -->
-            <!-- <P class="tel">TEL 00-0000-0000</P> -->
+           <P class="tel">TEL 00-0000-0000</P> 
           <nav class="navlink-left">
             <a href="<?php echo home_url(); ?>/clinicguide">当院について</a>
             <a href="<?php echo home_url(); ?>/clinicguide/#kamoku-syousai">診療科目</a>

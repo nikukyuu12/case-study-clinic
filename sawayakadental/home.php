@@ -5,8 +5,10 @@
       <article>
         <section id="mainvisual">
           <img src="<?php echo get_template_directory_uri(); ?>/images/family.jpg" id="mainimg" alt="家族歯磨き">
-          <h1 class="toph1">地域の皆様が安心して通える</h1>
-          <h1 class="toph1-2">家族みんなの為の歯科医院</h1>
+          <div id="main-h1">
+            <h1 class="toph1">地域の皆様が安心して通える</h1>
+            <h1 class="toph1-2">家族みんなの為の歯科医院</h1>
+          </div>
         </section>
 
         <section id="kamoku">
