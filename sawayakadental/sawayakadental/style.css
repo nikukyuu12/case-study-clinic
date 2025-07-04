@@ -1,0 +1,2329 @@
+/*
+Theme Name: SawayakaDentalClinic
+Theme URI: https://www.sawayakaclinic.net/
+Description: さわやか歯科ｸﾘﾆｯｸ公式ｻｲﾄ
+Version: 1.0.0
+Author: ｍ
+Author URI: https://www.sawayakaclinic.net/
+*/
+
+
+
+
+
+
+/* PC-SP共通 */
+
+body {
+  font-family: "Zen Maru Gothic", "M PLUS Rounded 1c", "Meiryo", sans-serif;
+  
+}
+
+.zen-maru-gothic-regular {
+  font-family: "Zen Maru Gothic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/* --------------------------------------------------PC 用ｽﾀｲﾙ ---*/
+@media screen and (min-width: 1001px) {
+  
+
+body {
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+#sp-nav, #sp-nav > button, .menu, .menu-sp, #logo-sp, .logo-sp, #close  {
+  display: none;
+}
+
+
+
+/* ----------------------------------------------------header--- */
+header {
+  background-color: #effaff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+#header-inner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1080px;
+  align-items: center;
+  margin: auto;
+  
+}
+
+#address {
+  display: flex;
+
+}
+
+#logo-top {
+  width: auto;
+  
+}
+.logo {
+  width: 190px;
+  height: 60px;
+}
+
+.tel {
+  margin: 50px 0 auto 50px;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+.close-daytime {
+  text-align: right;
+  margin-top: 10px;
+}
+
+
+.navlink-left, .navlink-right {
+  width: 144px;
+  font-size: 20px;
+  margin: 10px 0  0 10px;
+  
+}
+
+.navlink-left > a, .navlink-right > a {
+  display: inline-block;
+  width: 144px;
+  height: 27px;
+  margin-bottom: 5px;
+  background-color: #ffffff;
+  border: #23C7D6 3px solid;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.navlink-left > a, .navlink-right >  a {
+  text-decoration: none;
+  color: black;
+}
+
+.navlink-left > a:link, .navlink-right > a:link, .navinfomation > a:link {  
+  color: black;
+}
+
+.navlink-left > a:hover, .navlink-right > a:hover {
+  background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
+
+}
+
+.navinfomation {
+  margin: 10px auto auto 10px;
+  width: 200px;
+
+}
+
+
+.navinfomation > a {
+  display: inline-block;
+  width: 200px;
+  height: 26px;
+  margin-bottom: 5px;
+  background: linear-gradient(90deg, #23C7D6 30%, #ffffff 30%);
+  border: #23C7D6 3px solid;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+    
+}
+
+
+
+.navinfomation > a:hover {
+  background: linear-gradient(90deg, #23C7D6 35%, #ffffff 35%);
+  background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
+}
+
+#booking, #mail {
+  width: 25px;
+  height: 25px;
+  margin: 0 20px;
+ vertical-align: bottom;
+}
+
+
+/* -------------------------------------------main--- */
+main {
+  margin: 0 auto;
+}
+
+article {
+  background-color: #ffffff;
+  margin-top: 70px;
+}
+
+#mainvisual {
+position: relative;  
+}
+
+
+#mainimg {
+  width: 100%;
+}
+
+#main-h1 {
+  
+  position: absolute;
+  top: 50px;
+  right: 90px;
+  text-align: end;
+}
+
+.toph1, .toph1-2 {
+  font-size: 38px;
+  color: #23C7D6;
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #ffffff; */
+  margin: 0px;
+}
+
+/* --------------------------------------------科目バー--- */
+#kamoku {
+  background-image: url(images/top-main2.jpg);
+  background-size: cover;
+  background-color: rgb(255, 255, 255, 0.85);
+  background-blend-mode: lighten;
+  padding-top: 30px;
+}
+
+#concept-top {
+  position: relative;
+}
+
+
+.kamokubar1 {
+  width: 40%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar1 > hr {
+  width: 60%;
+  height: 3px;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.kamokuname1 {
+  width: 8rem;
+  height: 36px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+  margin: auto 40px;
+  padding-top: 5px;
+}
+
+
+.kamokubar2 {
+  width: 45%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar2 > hr {
+  width: 65%;
+  height: 3px;
+  align-items: center;
+  margin: auto 0px; 
+  background-color: #ffffff;
+  border: none;
+}
+
+.kamokuname2 {
+  width: 8rem;
+  height: 36px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+  margin: auto 40px;
+  padding-top: 5px;
+}
+
+.kamokubar3 {
+  width: 50%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar3 > hr {
+  width: 70%;
+  height: 3px;
+  align-items: center;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.kamokuname3 {
+  width: 8rem;
+  height: 36px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+  margin: auto 40px;
+  padding-top: 5px;
+}
+
+.kamokubar4 {
+  width: 55%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar4 > hr {
+  width: 75%;
+  height: 3px;
+  align-items: center;
+  margin: auto 0px;  
+  background-color: #ffffff;
+  border: none;
+}
+
+.kamokuname4 {
+  width: 8rem;
+  height: 36px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+  margin: auto 40px;
+  padding-top: 5px;
+}
+
+
+/* ------------------------------------------conceptバー大切３つ--- */
+
+.title1 {
+  width: 55%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.title1 > hr {
+  width: 55%;
+  height: 3px;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.titlename1 {
+  width: 20rem;
+  height: 36px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+  margin: auto 10px auto 30px;
+  padding-top: 5px;
+}
+
+
+.title2 {
+  width: 50%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 105px;
+  right: 0px;
+}
+
+.title2 > hr {
+  width: 50%;
+  height: 3px;
+  margin: auto 0px;;
+  background-color: #ffffff;
+  border: none; 
+}
+
+.titlename2 {
+  width: 20rem;
+  height: 36px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+  margin: auto 10px auto 30px;
+  padding-top: 5px;
+}
+
+.title3 {
+  width: 45%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 215px;
+  right: 0px;
+}
+
+.title3 > hr {
+  width: 55%;
+  height: 3px;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none; 
+}
+
+.titlename3 {
+  width: 15rem;
+  height: 36px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 20px;
+  text-align:center;
+  margin: auto 30px;
+  padding-top: 5px;
+}
+
+
+#kamoku-link {
+  position: absolute;
+  top: 370px;
+  right: 18%;
+}
+
+.kamokulink > a {
+  border: solid 1px #715D9C;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  margin-right: 0;
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+/* ---------------------------------------------------------特徴 01-02--- */
+#tokutyou-out {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+} 
+
+.tokutyou-in {
+  margin: 50px auto;
+}
+
+.tokutyou-kiji {
+  display: flex;
+}    
+
+.tokutyou-in > h1 {
+  font-size: 36px;
+  color: #715D9C;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+  text-align: center;
+  margin: 20px auto;
+}
+
+.number {
+  font-size: 120px;
+  color: #23C7D6;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #715D9C;
+  margin: auto 40px;
+}
+
+.tokutyou-text {
+  line-height: 2;
+}
+
+
+/* ---------------------------------------------------news--- */
+#newses {
+  max-width: 1080px;
+  margin: 20px auto;
+}
+
+
+.bar-top {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 57px;
+  position: relative;
+}  
+
+.bar-bottom {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 57px;
+  position: relative;
+}
+
+.bar-top > hr {
+  background-color: #ffffff;
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  top: 5px;
+}
+
+.bar-bottom > hr {
+  background-color: #ffffff;
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  top: 50px;
+}
+
+#bar-bottom-innner {
+  max-width: 1080px;
+  text-align: right;
+  margin: auto;
+  padding-top: 3px;
+}
+
+.news-title {
+  display: flex;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px auto;
+}
+
+
+
+.news-title::after {
+  content: url("images/news-after-bar.png");
+  margin-left: 20px;
+}
+
+.news1s {
+  height: 30px;
+  padding: 0  30px;
+  margin: 0 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.news-topics, .news-topics2 {
+  margin: 30px;
+}
+
+.news-topics > hr, .news-topics2 > hr {
+  background-color: #23C7D6;
+  height: 1px;
+  border: none;
+  flex-direction: row;
+}
+
+.news-report {
+  margin: 0px;
+  font-size: 16px;
+}
+
+
+/* ---------------------------------------------footer--- */
+footer {
+  background-color: #effaff;
+}
+
+#footer-innner {
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#footer-address > p {
+  font-size: 24px;
+}
+
+.parking {
+  font-size: 28px;
+  font-weight: bold;
+  color: #715D9C;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#copyright {
+  text-align: center;
+  margin: 0 auto;
+}
+
+table {
+  background-color: #ffffff;
+  border: #23C7D6;
+}
+
+td> span {
+  color: red;
+}
+
+
+/* ---------------------------------------- ＃concept-guide--- */
+
+#consept-guide {
+  margin:  0 auto;
+  padding-top: 50px;
+}
+
+#concept-greetings  {
+  display:flex;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+#concept-greetings > img {
+  max-width: 580px;
+  margin-right: 40px;
+}
+
+#clinic-img {
+  display:flex;
+  justify-content: center;
+}
+
+#clinic-img > img {
+  margin: 50px 25px;
+}
+
+#concept > h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #23C7D6;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #715D9C;
+}
+
+
+/* ---------------------------------------------科目詳細--- */
+
+#taisetu3s {
+  max-width: 1080px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 80px auto;
+}
+
+.taisetu {
+  max-width: 348px;
+  margin: 0 25px;
+  align-items: center;
+}  
+
+.taisetu > img {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.taisetu > p {
+  margin: 0 auto;
+  padding: 0 20px;;
+}
+
+/* ---------------------------------------------科目分類--- */
+
+.kamoku-bunnrui {
+  max-width: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+}
+
+.kamoku-bunnrui > img {
+  max-width: 420px;
+}
+.kamoku-bunnrui > p {
+  padding: 0  50px;
+}
+
+/* ----------------------------------------------staff--- */
+
+#staff-annnai, #staff-annnai-2, #staff-annnai-3 {
+  position: relative;
+  max-width: 1080px;
+  margin: 0 auto 100px auto;
+}
+
+#line {
+  transform: scale(-1,1);
+}
+
+.line-1, .line-2, .line-3 {
+  height: 20px;
+}
+
+.line-1 > hr, .line-2 > hr, .line-3 > hr {
+  background-color: #23C7D6;
+  border: none;
+  height: 2px;
+  margin: 0;
+}
+
+.line-2 {
+  width: 40%;
+}
+
+.line-3 {
+  width: 30%;
+}
+
+.staff-name {
+  position: absolute;
+  top: 100px;
+  left: 45%;
+  width: 55%;
+}
+
+.staff-name > pre, .staff-name2 > pre , .staff-name3 > pre{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.goaisatu {
+  font-weight: bold;
+  border: #23C7D6 solid 2px;
+  padding: 0 20px;
+  background-color: rgb(255, 255, 255, 0.5);
+  margin-top: 60px;
+  text-align: left;
+}
+
+.staff-name2  {
+  position: absolute;
+  top: 100px;
+  right: 35%;
+  width: 65%;
+}
+
+#staff-annnai-2  {
+  text-align: right;
+}
+
+.staff-name3  {
+  position: absolute;
+  top: 100px;
+  left: 35%;
+  width: 65%;
+}
+
+#line3 {
+  transform: scale(1,-1);
+  margin-bottom: 30px;
+}
+
+/* --------------------------------------------------#contact--- */
+
+#contact {
+  max-width: 1080px;
+  margin: 100px auto 0 auto;
+}
+
+.box-1 {
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  margin-left: 0;
+}
+
+
+.box-1::after{
+  content: '';
+  position: absolute;
+  top: 24px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(50% + 10px);
+  background-color: black;
+}
+
+
+.box-1::after {
+  right: 8px;
+}
+
+
+.box-1 > h1 {
+  font-size: 36px;
+  margin: 0 auto;
+}
+
+form {
+  max-width: 1080px;
+  margin: 30px auto 30px auto;
+}
+
+
+.form-box {
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  max-width: 700px;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+  margin: 10px auto;
+}
+
+
+.form-box::after{
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(70% + 30px);
+  background-color: black;
+  
+}
+
+
+.form-box::after {
+  left: 170px;
+}
+
+.form-box > label {
+  font-size: 24px;
+  width: 200px;
+  padding: 10px 0;
+
+}
+
+label > span {
+  color: red;
+  font-size: 28px;
+}
+
+input {
+  margin: 10px 50px;
+  width: 400px;
+  height: 40px;
+  background-color: #effaff;
+  border: solid 1px;
+  border-radius: 10px;
+  
+}
+
+textarea {
+  margin: 15px 50px;
+  width: 400px;
+  height: 300px;
+  background-color: #effaff;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+
+.form-box-area {
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  max-width: 700px;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+}
+
+
+.form-box-area::after{
+  content: '';
+  position: absolute;
+  top: 15px;
+  width: 2px;
+  height: -webkit-calc(100% + 20px);
+  height: calc(100% + 10px);
+  background-color: black;
+}
+
+
+.form-box-area::after {
+  left: 170px;
+}
+
+.form-box-area > label {
+  font-size: 24px;
+  width: 200px;
+  padding: 10px 0;
+  
+}
+
+#sousin {
+  max-width: 1080;
+  text-align: center;
+  margin-top: 50px
+}  
+
+/* プラグイン 送信ボタン */
+.wpcf7 input[type="submit"] {
+  background-image: url('images/contact-button.png');
+  background-repeat: no-repeat;
+  /* background-size:auto; */
+  text-decoration: none;
+  background-position: center center;
+  border: none;
+  background-color: #ffffff;
+  text-indent: -9999px;
+  width: 100%;
+  height: 65px;
+  cursor: pointer;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  text-align: center;
+  font-size: 24px;
+  background-color: lightpink;
+}
+  
+.wpcf7 form .wpcf7-response-output {
+  text-align: center;
+  font-size: 24px;
+  background-color: lightcoral;
+}
+
+.wpcf7-form-control wpcf7-submit has-spinner {
+  text-align: center;
+}
+
+/* ----------------------------------------#news--- */
+
+#outer-frame {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 120px auto 50px auto;
+}
+
+#outer-frame::before, #outer-frame::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  width: 1px;
+  height: -webkit-calc(100% + 100px);
+  height: calc(100% + 100px);
+  background-color: black;
+}
+
+#outer-frame::before {
+  right: 20px;
+}
+
+#outer-frame::after {
+  left: 20px;
+}
+
+#news-title {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+} 
+
+#category-title > h2 {
+  margin-top: 50px;
+}
+
+#news-top-in {
+  display: flex;
+  justify-content: space-between;
+}
+
+#news-top-in > a {
+  text-decoration: none;
+  color: black;
+  background-color: #effaff;
+  border: solid 1px #715D9C;
+  border-radius: 20px;
+  height: 30px;  
+  margin: 10px;
+  padding: 5px 20px;
+  align-content: center;
+}
+
+#news-inner {
+  margin: 20px auto;
+  padding: 0 30px;
+}
+
+#news-top-side {
+  max-width: 1080px;
+  margin: 20px auto;
+} 
+
+#aikyatti {
+  margin: auto;
+}
+
+.hr-1 >hr {
+  background-color: #c0c0c0;
+  height: 2px;
+  border: none;
+}
+
+.hr-2 >hr {
+  background-color: #23C7D6;
+  height: 1px;
+  border: none;
+}
+
+
+.hr-3 > hr {
+  width: 1px;
+  height: 70%;
+  border: none;
+  background-color: #23C7D6;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+
+/* ------------------------------------newslineup--- */
+
+.title-news {
+  font-size: 42px;
+  margin: 0;
+  max-width: 1000px;
+  text-align: center;
+}
+
+#news-top-side {
+  min-width: 1080;
+  padding: 0 20px;
+}
+
+#category-tab {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#category-tab > label {
+flex: 1 1 auto;
+order: -1;
+position: relative;
+padding: 5px;
+background-color: #effaff;
+color: black;
+text-align: center;
+border: solid 1px #715D9C;
+border-radius: 30px;
+cursor: pointer;
+transition: 0.3s all;
+}
+
+#category-tab input {
+  display: none;
+
+}
+
+#category-tab > div {
+  display: none;
+}
+
+#category-tab label:has(:checked)+div {
+  display: block;
+  width: 100%;
+  
+}
+
+#category-tab label:has(:checked) {
+  background-color: #23C7D6;
+}
+
+.kiji {
+  display: flex;
+  
+}
+
+.kiji > img {
+  width: 150px;
+  margin: auto 20px;
+}
+
+
+.kiji-1 {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.kiji-1 > p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.kiji-1 > h3 {
+  margin: 8px 0;
+}
+
+.news-link > a {
+  border: solid 1px #715D9C;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  margin-right: 0;
+}
+
+.news-link {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+#imgbar {
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+/* ----------------------------   #bookingday----- */
+#booking-top {
+  text-align: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.box-booking {
+  border-top: solid 2px #23C7D6;
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+
+.box-booking::after, .box-booking::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  width: 2px;
+  height: -webkit-calc(100% + 30px);
+  height: calc(100% + 30px);
+  background-color: black;
+}
+
+.box-booking::after {
+  right: 15px;
+}
+
+.box-booking::before {
+  left: 15px;
+}
+
+.box-booking > h1 {
+  font-size: 36px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+
+/* プラグイン style */
+
+#booking_package_input_ {
+  display: flex;
+}
+
+#booking_package_input_  > label {
+  margin-left: 50px;
+}
+
+.form_radio {
+  width: 20px;
+  margin-left:  50px;
+}
+
+.row {
+  text-align: left;
+  height: 100px;
+  
+}
+
+#reservationHeader {
+  color: red;
+}
+   
+}
+
+/*################################################################ 
+--- SP用 ﾃﾞｻﾞｲﾝ------------------------------------------------- */
+
+@media screen and (max-width: 1000px) {
+
+body {
+  margin: 0 auto;
+  min-width: 375px;
+}
+
+
+/* pcﾅﾋﾞ を非表示 */
+#header-inner {
+  display: none;
+  
+}
+
+#header-inner-sp {
+  margin: 5px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+
+/* ﾊﾝﾊﾞｰｶﾞｰﾒﾆｭｰ */
+.menu-sp {
+  float: right;
+}
+
+/* spﾅﾋﾞ表示切替  初期状態 */
+#sp-nav {
+  background-color: #effaff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  display: none;
+  z-index: 2000;
+}
+
+#logo, .logo {
+  display: none;
+}
+
+/* ----------------------------------------------------header--- */
+header {
+  background-color: #effaff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+.logo-sp {
+  width: 154px;
+  height: 50px;
+}
+
+#close {
+  float: right;
+  padding: 10px;
+}
+
+.menu {
+  text-align: center;
+}
+
+
+.menu > a {
+  width: 144px;
+  height: 28px;
+  margin: 0 auto 5px auto;
+  background-color: #ffffff;
+  border: #23C7D6 3px solid;
+  border-radius: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+
+}
+
+.menu > a:link {  
+  color: black;
+}
+
+.menu > a:hover {
+  background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
+}
+
+
+
+
+/* -------------------------------------------main--- */
+
+main {
+  margin: 65px auto 0 auto;
+}
+
+article {
+  background-color: #ffffff;
+  margin-top: 10px;
+}
+
+#mainvisual {
+  position: relative;  
+}
+
+#mainimg {
+  width: 100%; 
+}
+
+#main-h1 {
+  position: absolute;
+  top: 5px;
+  right: 30px;
+  text-align: end;
+}
+
+.toph1, .toph1-2 {
+  font-size: 16px;
+  color: #23C7D6;
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #ffffff; */
+  margin: 0px;
+}
+
+
+
+/* --------------------------------------------科目バー--- */
+
+#kamoku {
+  background-image: url(images/top-main2.jpg);
+  background-size: cover;
+  background-color: rgb(255, 255, 255, 0.85);
+  background-blend-mode: lighten;
+  padding-top: 30px;
+}
+
+#concept-top {
+  position: relative;
+}
+
+
+.kamokubar1 {
+  width: 40%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar1 > hr {
+  width: 60%;
+  height: 3px;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.kamokuname1 {
+  width: 8rem;
+  height: 35px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align:center;
+  margin: auto 10px;
+  padding-top: 10px;
+}
+
+
+.kamokubar2 {
+  width: 45%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar2 > hr {
+  width: 65%;
+  height: 3px;
+  align-items: center;
+  margin: auto 0px; 
+  background-color: #ffffff;
+  border: none;
+}
+
+.kamokuname2 {
+  width: 8rem;
+  height: 35px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align:center;
+  margin: auto 10px;
+  padding-top: 10px;
+}
+
+.kamokubar3 {
+  width: 50%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar3 > hr {
+  width: 70%;
+  height: 3px;
+  align-items: center;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.kamokuname3 {
+  width: 8rem;
+  height: 35px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align:center;
+  margin: auto 10px;
+  padding-top: 10px;
+}
+
+.kamokubar4 {
+  width: 55%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: -10px 8px 4px #23C7D6;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.kamokubar4 > hr {
+  width: 75%;
+  height: 3px;
+  align-items: center;
+  margin: auto 0px;  
+  background-color: #ffffff;
+  border: none; 
+}
+
+.kamokuname4 {
+  width: 8rem;
+  height: 35px;
+  box-shadow: -10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align:center;
+  margin: auto 10px;
+  padding-top: 10px;
+}
+
+
+/* ------------------------------------------conceptバー大切３つ--- */
+
+.title1 {
+  width: 55%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.title1 > hr {
+  width: 55%;
+  height: 3px;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.titlename1 {
+  width: 50rem;
+  height: 43px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align:center;
+  margin: auto 10px;
+  padding-top: 10px;
+}
+
+
+.title2 {
+  width: 50%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 107px;
+  right: 0px;
+}
+
+.title2 > hr {
+  width: 50%;
+  height: 3px;
+  margin: auto 0px;;
+  background-color: #ffffff;
+  border: none;
+}
+
+.titlename2 {
+  width: 35rem;
+  height: 43px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align:center;
+  margin: auto 10px;
+  padding-top: 10px;
+}
+
+.title3 {
+  width: 45%;
+  height: 77px;
+  background-color: #effaff;
+  box-shadow: 10px 8px 4px #23C7D6;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 212px;
+  right: 0px;
+}
+
+.title3 > hr {
+  width: 55%;
+  height: 3px;
+  margin: auto 0px;
+  background-color: #ffffff;
+  border: none;
+}
+
+.titlename3 {
+  width: 40rem;
+  height: 35px;
+  box-shadow: 10px 8px 4px rgb(0, 0, 0, 0.5);
+  background-color: #ffffff;
+  font-size: 16px;
+  text-align:center;
+  margin: auto 10px;
+  padding-top: 10px;
+}
+
+#kamoku-link {
+  position: absolute;
+  top: 370px;
+  right: 20px;
+}
+
+
+.kamokulink > a {
+  border: solid 1px #715D9C;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  margin-right: 0;
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 12px;;
+}
+
+/* ---------------------------------------------------------特徴 01-02--- */
+#tokutyou-out {
+  margin: 50px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+} 
+
+.tokutyou-in {
+  margin: 10px auto;
+}
+
+.tokutyou-kiji {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 15px;
+}    
+
+.tokutyou-in > h1 {
+  font-size: 30px;
+  color: #715D9C;
+  text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+  text-align: center;
+  margin:  0 auto;
+}
+
+.tokutyou-text {
+  margin: 0 10px;
+  line-height: 1.5;
+}
+.number {
+  font-size: 65px;
+  color: #23C7D6;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #715D9C;
+}
+
+
+/* ------------------------------------------------------news--- */
+#newses {
+  margin: 20px auto;
+  padding: 0 20px;
+  /* display: block; */
+}
+
+.bar-top {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 57px;
+  position: relative;
+}  
+
+.bar-bottom {
+  background-color: #c0c0c0;
+  width: 100%;
+  height: 57px;
+  position: relative;
+}
+
+.bar-top > hr {
+  background-color: #ffffff;
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  top: 5px; 
+}
+
+.bar-bottom > hr {
+  background-color: #ffffff;
+  border: none;
+  height: 2px;
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  top: 50px;
+}
+
+#bar-bottom-innner {
+  text-align: right;
+  margin: auto;
+  padding-top: 6px;
+}
+
+
+.news-title {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.news-title::after {
+  content: url("images/sp-top-news-bar.png");
+  margin-left: 20px;
+  
+}
+
+.news-topics2 {
+  margin-top: 40px;
+}
+
+.news1s, .news2s, .news3s {
+  padding: 0 5px;
+  margin: 10px 0;
+  
+}
+
+.news-topics > hr, .news-topics2 > hr {
+  background-color: #23C7D6;
+  height: 1px;
+  border: none;
+  flex-direction: row;
+}
+
+.news-report {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+#news-nav-button {
+  width: 120px;
+  margin-right: 20px;
+}
+
+/* ---------------------------------------------footer--- */
+footer {
+  background-color: #effaff; 
+}
+
+#footer-innner {
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#footer-address > p {
+  font-size: 18px;
+}
+
+.parking {
+  font-size: 18px;
+  font-weight: bold;
+  color: #715D9C;
+  text-align: center;
+  margin: 20 auto 0 auto;
+}
+
+#copyright {
+  text-align: center;
+  margin: 0 auto;
+}
+
+iframe {
+  width: 100%;
+}
+
+table {
+  background-color: #ffffff;
+  border: #23C7D6;
+}
+
+td> span {
+  color: red;
+}
+
+/* ---------------------------------------- ＃concept-guide--- */
+
+#consept-guide {
+  margin: 30px auto 0 auto;
+}
+
+#concept-greetings  {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+#concept-greetings > img {
+  margin: 10px auto;
+  width: 100%;
+}
+
+#concept > h1 {
+  font-size: 20px;
+  text-align: center;
+  color: #23C7D6;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #715D9C;
+}
+
+
+#clinic-img {
+  display:flex;
+  flex-wrap: wrap;
+  
+}
+
+#clinic-img > img {
+  margin: 10px auto;
+  width: 90%;
+}
+
+/* ---------------------------------------------科目詳細--- */
+
+#taisetu3s {
+  display: block;
+  justify-content: center;
+  margin: 0 auto 80px auto;
+}
+
+.taisetu {
+  max-width: 348px;
+  margin: 20px auto;
+  align-items: center;
+  
+}
+  
+
+.taisetu > img {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.taisetu > p {
+  margin: 0 auto;
+  padding: 0 20px;;
+}
+
+/* ---------------------------------------------科目分類--- */
+
+.kamoku-bunnrui {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.kamoku-bunnrui > img {
+  min-width: 335px;
+}
+
+
+.kamoku-bunnrui > p {
+  padding: 0 10px;
+  margin: 20px auto;
+  
+}
+
+/* ----------------------------------------------staff--- */
+
+#staff-annnai, #staff-annnai-2, #staff-annnai-3 {
+  margin: 15px;
+}
+
+#staff-annnai > img, #staff-annnai-2 > img, #staff-annnai-3 > img {
+  max-width: 335px;
+}
+
+#line {
+  transform: scale(-1,1);
+  
+}
+
+.line-1, .line-2, .line-3 {
+  height: 20px;
+  
+}
+
+.line-1 > hr, .line-2 > hr, .line-3 > hr {
+  background-color: #23C7D6;
+  border: none;
+  height: 2px;
+  margin: 0;
+}
+
+.line-2 {
+  width: 40%;
+  
+}
+
+.line-3 {
+  width: 30%;
+}
+
+.staff-name > pre, .staff-name2 > pre , .staff-name3 > pre{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px auto;
+}
+
+
+.goaisatu {
+  font-weight: bold;
+  border: #23C7D6 solid 2px;
+  padding: 0 20px;
+  background-color: rgb(255, 255, 255, 0.5);
+  text-align: left;
+}
+
+
+#staff-annnai-2  {
+  text-align: right;
+}
+
+
+#line3 {
+  transform: scale(1,-1);
+  margin-bottom: 30px;
+}
+
+/* --------------------------------------------------#contact--- */
+
+#contact {
+  margin: 80px auto 0 auto;
+  padding: 0 20px;
+}
+
+.box-1 {
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  width: 150px;
+  height:  50px;
+
+}
+
+
+.box-1::after{
+  content: '';
+  position: absolute;
+  top: 20px;
+  width: 2px;
+  height: calc(50% + 20px);
+  background-color: black;
+}
+
+
+.box-1::after {
+  right: 10px;
+  
+}
+
+.box-1 > h1 {
+  font-size: 34px;
+  margin: 5px auto;
+}
+
+form {
+  margin: 50px auto 30px auto;
+}
+
+.form-box {
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  height: 130px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+
+.form-box::after {
+  right: 200px;
+}
+
+.form-box > label {
+  font-size: 16px;
+  width: 200px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+label > span {
+  color: red;
+  font-size: 24px;
+}
+
+input {
+  margin: 5px auto;
+  width: 100%;
+  height: 30px;
+  background-color: #effaff;
+  border: solid 1px;
+  border-radius: 10px;
+}
+
+textarea {
+  margin: 10px auto;
+  width: 100%;
+  height: 300px;
+  background-color: #effaff;
+  border: solid 1px;
+  border-radius: 10px;
+  
+}
+
+
+.form-box-area {
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  height: 400px;
+  margin: 20px auto;
+  padding:0 10px 20px 10px;
+}
+
+
+
+.form-box-area::after {
+  right: 200px;
+}
+
+.form-box-area > label {
+  font-size: 16px;
+  width: 200px;
+  padding: 10px 0;
+  
+}
+
+#sousin {
+  max-width: 335px;
+  text-align: center;
+  
+} 
+
+
+/* プラグイン 送信ボタン */
+.wpcf7 input[type="submit"] {
+  background-image: url('images/contact-button.png');
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  text-decoration: none;
+  background-position: center center;
+  border: none;
+  background-color: #ffffff;
+  text-indent: -9999px;
+  width: 100%;
+  height: 65px;
+  cursor: pointer;
+  
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  text-align: center;
+  font-size: 16px;
+  background-color: lightpink;
+}
+  
+.wpcf7 form .wpcf7-response-output {
+  text-align: center;
+  font-size: 16px;
+  background-color: lightcoral;
+}
+
+.wpcf7-form-control wpcf7-submit has-spinner {
+  text-align: center;
+}
+
+
+/* ----------------------------------------#news--- */
+
+#outer-frame {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 100px auto 30px auto;
+  
+}
+
+#outer-frame::before, #outer-frame::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  width: 1px;
+  height: -webkit-calc(100% + 100px);
+  height: calc(100% + 80px);
+  background-color: black;
+  
+}
+
+#outer-frame::before {
+  right: 15px;
+}
+#outer-frame::after {
+  left: 15px;
+}
+
+#news-title {
+  width: 100%;
+  margin: 0 auto;
+} 
+
+#category-title > h2 {
+  margin-top: 50px;
+}
+
+#news-inner {
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+#news-top-in {
+  display: flex;
+  justify-content: space-between;
+}
+
+#news-top-in > a {
+  text-decoration: none;
+  color: black;
+  background-color: #effaff;
+  border: solid 1px #715D9C;
+  border-radius: 20px;
+  height: 30px;  
+  margin: 10px 5px;
+  padding: 5px 10px;
+  align-content: center;
+  font-size: 12px;
+}
+
+
+#aikyatti > img {
+  margin: 10px auto;
+  width: 100%;
+}
+
+.hr-1 >hr {
+  background-color: #c0c0c0;
+  height: 3px;
+  border: none;
+}
+
+.hr-2 >hr {
+  background-color: #23C7D6;
+  height: 1px;
+  border: none;
+}
+
+#sidebar {
+  border: solid 1px black;
+  background-color: #effaff;
+  margin: 40px;
+  padding: 0 20px;
+  position: relative;
+}
+
+
+.category-1 > h4 {
+  margin: 30px 0 10px 0;
+  color: #23C7D6;
+}
+
+.category-1 > p {
+  font-size: 14px;
+  margin: 5px auto;
+  
+}
+
+.category-1 > a {
+  color: black;
+}
+
+
+.hr-3 > hr {
+  width: 1px;
+  height: 70%;
+  border: none;
+  background-color: #23C7D6;
+  position: absolute;
+  top: 100px;
+  right: 30px;
+}
+
+
+/* ------------------------------------newslineup--- */
+
+.title-news {
+  font-size: 42px;
+  margin: 0;
+  max-width: 1000px;
+  text-align: center;
+}
+
+#news-top-side {
+  min-width: 375;
+  padding: 0 25px;
+}
+
+#category-tab {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+#category-tab > label {
+flex: 1 1 auto;
+order: -1;
+position: relative;
+padding: 3px 5px;
+background-color: #effaff;
+color: black;
+text-align: center;
+border: solid 1px #715D9C;
+border-radius: 30px;
+cursor: pointer;
+transition: 0.3s all;
+}
+
+#category-tab input {
+  display: none;
+
+}
+
+#category-tab > div {
+  display: none;
+}
+
+#category-tab label:has(:checked)+div {
+  display: block;
+  width: 100%;
+}
+
+#category-tab label:has(:checked) {
+  background-color: #23C7D6;
+}
+
+.kiji {
+  display: flex;
+  
+}
+
+.kiji > img {
+  width: 150px;
+  margin: auto 5px;
+}
+
+
+.kiji-1 {
+  width: 100%;
+  padding: 0 5px;
+}
+
+.kiji-1 > p {
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.kiji-1 > h3 {
+  margin: 8px 0;
+}
+
+.news-link > a {
+  border: solid 1px #715D9C;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  margin-right: 0;
+  font-size: 12px;
+}
+
+.news-link {
+  text-align: right;
+  margin-bottom: 5px;
+}
+
+#imgbar {
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+/* ----------------------------#bookingday----- */
+#booking-top {
+  text-align: center;
+  margin: 0 auto;
+  
+}
+
+.box-booking {
+  border-top: solid 2px #23C7D6;
+  border-bottom: solid 2px #23C7D6;
+  position: relative;
+  max-width: 300px;
+  margin: 30px auto;
+}
+
+
+.box-booking::after, .box-booking::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  width: 2px;
+  height: -webkit-calc(100% + 30px);
+  height: calc(100% + 30px);
+  background-color: black;
+}
+
+
+/* :::プラグイン bookingpackage style::: */
+.box-booking::after {
+  right: 15px;
+}
+
+.box-booking::before {
+  left: 15px;
+}
+
+.box-booking > h1 {
+  font-size: 14px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+#booking-package-locale-ja, #booking-package-id-1, #booking-package_inputFormPanel{
+  width: 330px;
+  margin: 0 auto;
+
+}
+
+.radio_title {
+  font-size: 14px;
+}
+
+.title_in_form {
+  color: red;
+}
+
+/* プラグイン style */
+
+#booking_package_input_ {
+  display: flex;
+}
+
+#booking_package_input_  > label {
+  margin-left: 50px;
+}
+
+.form_radio {
+  width: 20px;
+  margin-left:  50px;
+}
+
+.row {
+  text-align: left;
+  height: 100px;
+  
+}
+
+#reservationHeader {
+  color: red;
+}
+   
+
+}
