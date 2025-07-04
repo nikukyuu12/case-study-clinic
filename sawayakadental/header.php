@@ -16,22 +16,22 @@
       <div id="header-inner">
         <div id="logo-top">
           <a href="<?php echo esc_url(home_url('/')); ?>" id="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo2.png" alt="トップページに戻る" class="logo"></a>
-          <P class="tel">TEL 00-0000-0000</P>
+          
         </div>
         <div id="address">
-          <p class="close-daytime">休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p>
-            
+          <!-- <p class="close-daytime">休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p> -->
+            <!-- <P class="tel">TEL 00-0000-0000</P> -->
           <nav class="navlink-left">
-            <button><a href="<?php echo home_url(); ?>/clinicguide">当院について</a></button>
-            <button><a href="<?php echo home_url(); ?>/clinicguide/#kamoku-syousai">診療科目</a></button>
+            <a href="<?php echo home_url(); ?>/clinicguide">当院について</a>
+            <a href="<?php echo home_url(); ?>/clinicguide/#kamoku-syousai">診療科目</a>
           </nav>
           <nav class="navlink-right">
-            <button><a href="<?php echo home_url(); ?>/clinicguide/#staff">スタッフ</a></button>
-            <button><a href="<?php echo home_url(); ?>/category/news">News</a></button>
+            <a href="<?php echo home_url(); ?>/clinicguide/#staff">スタッフ</a>
+            <a href="<?php echo home_url(); ?>/category">News</a>
           </nav>
           <nav class="navinfomation">
-            <button><img src="<?php echo get_template_directory_uri(); ?>/images/booking.png" id="booking"><a href="<?php echo home_url(); ?>/contact">問合せフォーム</a></button>
-            <button><img src="<?php echo get_template_directory_uri(); ?>/images/mail.png" id="mail"><a href="<?php echo home_url(); ?>/bookingday">予約フォーム</a></button>
+            <a href="<?php echo home_url(); ?>/bookingday"><img src="<?php echo get_template_directory_uri(); ?>/images/booking.png" id="booking">予約フォーム</a>
+            <a href="<?php echo home_url(); ?>/contact"><img src="<?php echo get_template_directory_uri(); ?>/images/mail.png" id="mail">問合せフォーム</a>
           </nav>
         </div>
       </div>
@@ -49,13 +49,13 @@
       
       <nav id="sp-nav">
         <img id="close" src="<?php echo get_template_directory_uri(); ?>/images/close.png" alt="navclose" onclick="document.getElementById('sp-nav').style.display = 'none'">
-        <a href="index.html" id="logo-sp"><img  src="<?php echo get_template_directory_uri(); ?>/images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
-        
-        <button><a class="menu" href="clinicguide.html" onclick="document.getElementById('sp-nav').style.display = 'none'">当院について</a></button>
-        <button><a class="menu" href="clinicguide.html#kamoku-syousai" onclick="document.getElementById('sp-nav').style.display = 'none'">診療科目</a></button>
-        <button><a class="menu" href="clinicguide.html#staff" onclick="document.getElementById('sp-nav').style.display = 'none'">スタッフ</a></button>
-        <button><a class="menu" href="news.html" onclick="document.getElementById('sp-nav').style.display = 'none'">News</a></button>
-
+        <a href="<?php echo esc_url(home_url('/')); ?>" id="logo-sp"><img  src="<?php echo get_template_directory_uri(); ?>/images/logo2.png" alt="トップページに戻る" class="logo-sp"></a>
+        <div class="menu">
+          <a href="<?php echo home_url(); ?>/clinicguide" onclick="document.getElementById('sp-nav').style.display = 'none'">当院について</a>
+          <a href="<?php echo home_url(); ?>/clinicguide/#kamoku-syousai" onclick="document.getElementById('sp-nav').style.display = 'none'">診療科目</a>
+          <a href="<?php echo home_url(); ?>/clinicguide/#staff" onclick="document.getElementById('sp-nav').style.display = 'none'">スタッフ</a>
+          <a href="<?php echo home_url(); ?>/category" onclick="document.getElementById('sp-nav').style.display = 'none'">News</a>
+        </div>
       </nav>
     
     </header>

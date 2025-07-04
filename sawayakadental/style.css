@@ -56,7 +56,6 @@ header {
 
 #address {
   display: flex;
-  
 }
 
 
@@ -84,55 +83,58 @@ header {
 .navlink-left, .navlink-right {
   width: 144px;
   font-size: 20px;
-  margin: 25px 0  0 10px;
-  
+  margin: 10px 0  0 10px;
   
 }
 
-.navlink-left > button, .navlink-right > button {
+.navlink-left > a, .navlink-right > a {
+  display: inline-block;
   width: 144px;
-  height: 28px;
+  height: 27px;
   margin-bottom: 5px;
   background-color: #ffffff;
   border: #23C7D6 3px solid;
   border-radius: 20px;
+  text-align: center;
 }
 
-.navlink-left > button > a, .navlink-right > button > a {
+.navlink-left > a, .navlink-right >  a {
   text-decoration: none;
   color: black;
 }
 
-.navlink-left > button > a:link, .navlink-right > button > a:link, .navinfomation > button > a:link {  
+.navlink-left > a:link, .navlink-right > a:link, .navinfomation > a:link {  
   color: black;
 }
 
-.navlink-left > button:hover, .navlink-right > button:hover {
+.navlink-left > a:hover, .navlink-right > a:hover {
   background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
 
 }
 
 .navinfomation {
-  margin: 25px 0 0 10px;
+  margin: 10px auto auto 10px;
+  width: 200px;
+
 }
 
-.navinfomation > button {
-  display: flex;
-  width: 180px;
-  height: 30px;
+
+.navinfomation > a {
+  display: inline-block;
+  width: 200px;
+  height: 26px;
   margin-bottom: 5px;
-  background: linear-gradient(90deg, #23C7D6 35%, #ffffff 35%);
+  background: linear-gradient(90deg, #23C7D6 30%, #ffffff 30%);
   border: #23C7D6 3px solid;
   border-radius: 20px;
-}
-
-.navinfomation > button > a {
   text-decoration: none;
   color: black;
-  margin: auto;
+    
 }
 
-.navinfomation > button:hover {
+
+
+.navinfomation > a:hover {
   background: linear-gradient(90deg, #23C7D6 35%, #ffffff 35%);
   background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
 }
@@ -140,17 +142,19 @@ header {
 #booking, #mail {
   width: 25px;
   height: 25px;
-  margin: 0 20px 0px 10px;
+  margin: 0 20px;
+ vertical-align: bottom;
 }
 
 
 /* -------------------------------------------main--- */
 main {
-  margin-top: 75px;
+  margin: 0 auto;
 }
 
 article {
   background-color: #ffffff;
+  margin-top: 70px;
 }
 
 #mainvisual {
@@ -414,10 +418,21 @@ position: relative;
 }
 
 
-#kamokubutton {
+#kamoku-link {
   position: absolute;
-  top: 360px;
+  top: 370px;
   right: 18%;
+}
+
+.kamokulink > a {
+  border: solid 1px #715D9C;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  margin-right: 0;
+  text-align: right;
+  margin-bottom: 5px;
 }
 
 /* ---------------------------------------------------------特徴 01-02--- */
@@ -512,11 +527,7 @@ position: relative;
   margin: 10px auto;
 }
 
-#kamoku-link {
-  position: absolute;
-  top: 370px;
-  right: 110px;
-}
+
 
 .news-title::after {
   content: url("images/news-after-bar.png");
@@ -578,12 +589,21 @@ footer {
   margin: 0 auto;
 }
 
+table {
+  background-color: #ffffff;
+  border: #23C7D6;
+}
+
+td> span {
+  color: red;
+}
 
 
 /* ---------------------------------------- ＃concept-guide--- */
 
 #consept-guide {
-  margin: 130px auto 0 auto;
+  margin:  0 auto;
+  padding-top: 50px;
 }
 
 #concept-greetings  {
@@ -738,7 +758,7 @@ footer {
 
 #contact {
   max-width: 1080px;
-  margin: 130px auto;
+  margin: 80px auto;
 }
 
 .box-1 {
@@ -773,39 +793,43 @@ footer {
 
 form {
   max-width: 1080px;
-  margin: 100px auto 30px auto;
+  margin: 30px auto 30px auto;
 }
 
 
 .form-box {
   border-bottom: solid 2px #23C7D6;
   position: relative;
-  max-width: 600px;
-  height: 50px;
+  max-width: 700px;
+  height: 120px;
   display: flex;
-  margin: 20px auto;
+  justify-content: space-between;
+  align-items: first baseline;
+  margin: 10px auto;
 }
 
 
 .form-box::after{
   content: '';
   position: absolute;
-  top: 15px;
+  top: 20px;
   width: 2px;
   height: -webkit-calc(100% + 20px);
-  height: calc(50% + 20px);
+  height: calc(70% + 30px);
   background-color: black;
+  
 }
 
 
 .form-box::after {
-  right: 400px;
+  left: 170px;
 }
 
 .form-box > label {
   font-size: 24px;
   width: 200px;
   padding: 10px 0;
+
 }
 
 label > span {
@@ -815,16 +839,17 @@ label > span {
 
 input {
   margin: 10px 50px;
-  width: 300px;
-  height: 30px;
+  width: 400px;
+  height: 40px;
   background-color: #effaff;
   border: solid 1px;
   border-radius: 10px;
+  
 }
 
 textarea {
   margin: 15px 50px;
-  width: 300px;
+  width: 400px;
   height: 300px;
   background-color: #effaff;
   border: solid 1px;
@@ -835,9 +860,10 @@ textarea {
 .form-box-area {
   border-bottom: solid 2px #23C7D6;
   position: relative;
-  max-width: 600px;
-  height: 350px;
+  max-width: 700px;
+  height: 400px;
   display: flex;
+  justify-content: space-between;
   margin: 20px auto;
 }
 
@@ -854,7 +880,7 @@ textarea {
 
 
 .form-box-area::after {
-  right: 400px;
+  left: 170px;
 }
 
 .form-box-area > label {
@@ -870,6 +896,32 @@ textarea {
   margin: 100px
 }  
 
+/* プラグイン 送信ボタン */
+.wpcf7 input[type="submit"] {
+  background-image: url('images/contact-button.png');
+  background-repeat: no-repeat;
+  background-size:auto;
+  text-decoration: none;
+  border: none;
+  background-color: #ffffff;
+  text-indent: -9999px;
+  width: 210px;
+  height: 65px;
+  cursor: pointer;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  text-align: center;
+  font-size: 24px;
+  background-color: lightpink;
+}
+  
+.wpcf7 form .wpcf7-response-output {
+  text-align: center;
+  font-size: 24px;
+  background-color: lightcoral;
+}
+
 /* ----------------------------------------#news--- */
 
 #outer-frame {
@@ -878,7 +930,7 @@ textarea {
   position: relative;
   width: 100%;
   height: auto;
-  margin: 150px auto 50px auto;
+  margin: 120px auto 50px auto;
 }
 
 #outer-frame::before, #outer-frame::after {
@@ -943,7 +995,7 @@ textarea {
 
 .hr-1 >hr {
   background-color: #c0c0c0;
-  height: 3px;
+  height: 2px;
   border: none;
 }
 
@@ -1009,6 +1061,11 @@ transition: 0.3s all;
 #category-tab label:has(:checked)+div {
   display: block;
   width: 100%;
+  
+}
+
+#category-tab label:has(:checked) {
+  background-color: #23C7D6;
 }
 
 .kiji {
@@ -1165,26 +1222,30 @@ header {
   padding: 10px;
 }
 
-#sp-nav > button {
+.menu {
+  text-align: center;
+}
+
+
+.menu > a {
   width: 144px;
   height: 28px;
-  margin: 5px auto;
+  margin: 0 auto 5px auto;
   background-color: #ffffff;
   border: #23C7D6 3px solid;
   border-radius: 20px;
-  display: block;
-}
-
-#sp-nav> button > a {
+  display: inline-block;
   text-decoration: none;
   color: black;
+  text-align: center;
+
 }
 
-#sp-nav > button > a:link {  
+.menu > a:link {  
   color: black;
 }
 
-#sp-nav > button:hover {
+.menu > a:hover {
   background: linear-gradient(0deg, rgb(35,199,214,0.5) 50%, #ffffff 50%);
 }
 
@@ -1194,11 +1255,12 @@ header {
 /* -------------------------------------------main--- */
 
 main {
-  margin-top: 65px;
+  margin: 65px auto 0 auto;
 }
 
 article {
   background-color: #ffffff;
+  margin-top: 10px;
 }
 
 #mainvisual {
@@ -1469,6 +1531,18 @@ article {
 }
 
 
+.kamokulink > a {
+  border: solid 1px #715D9C;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  margin-right: 0;
+  text-align: right;
+  margin-bottom: 5px;
+  font-size: 12px;;
+}
+
 /* ---------------------------------------------------------特徴 01-02--- */
 #tokutyou-out {
   margin: 50px auto 0 auto;
@@ -1626,10 +1700,19 @@ iframe {
   width: 100%;
 }
 
+table {
+  background-color: #ffffff;
+  border: #23C7D6;
+}
+
+td> span {
+  color: red;
+}
+
 /* ---------------------------------------- ＃concept-guide--- */
 
 #consept-guide {
-  margin: 80px auto 0 auto;
+  margin: 30px auto 0 auto;
 }
 
 #concept-greetings  {
@@ -1777,7 +1860,7 @@ iframe {
 /* --------------------------------------------------#contact--- */
 
 #contact {
-  margin: 100px auto 50px auto;
+  margin: 50px auto 0 auto;
   padding: 0 20px;
 }
 
@@ -1811,13 +1894,13 @@ iframe {
 }
 
 form {
-  margin: 100px auto 30px auto;
+  margin: 50px auto 30px auto;
 }
 
 .form-box {
   border-bottom: solid 2px #23C7D6;
   position: relative;
-  height: 80px;
+  height: 130px;
   margin: 20px auto;
   padding: 0 10px;
 }
@@ -1862,7 +1945,7 @@ textarea {
 .form-box-area {
   border-bottom: solid 2px #23C7D6;
   position: relative;
-  height: 350px;
+  height: 400px;
   margin: 20px auto;
   padding:0 10px 20px 10px;
 }
@@ -1881,10 +1964,44 @@ textarea {
 }
 
 #sousin {
-  max-width: 335;
+  max-width: 335px;
   text-align: center;
-  margin: 30px auto;
-}  
+  
+} 
+
+
+/* プラグイン 送信ボタン */
+.wpcf7 input[type="submit"] {
+  background-image: url('images/contact-button.png');
+  background-repeat: no-repeat;
+  /* background-size: auto; */
+  text-decoration: none;
+  background-position: center center;
+  border: none;
+  background-color: #ffffff;
+  text-indent: -9999px;
+  width: 100%;
+  height: 65px;
+  cursor: pointer;
+  
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+  text-align: center;
+  font-size: 16px;
+  background-color: lightpink;
+}
+  
+.wpcf7 form .wpcf7-response-output {
+  text-align: center;
+  font-size: 16px;
+  background-color: lightcoral;
+}
+
+.wpcf7-form-control wpcf7-submit has-spinner {
+  text-align: center;
+}
+
 
 /* ----------------------------------------#news--- */
 
@@ -1894,7 +2011,7 @@ textarea {
   position: relative;
   width: 100%;
   height: auto;
-  margin: 90px auto 30px auto;
+  margin: 50px auto 30px auto;
   
 }
 
@@ -1910,10 +2027,10 @@ textarea {
 }
 
 #outer-frame::before {
-  right: 20px;
+  right: 15px;
 }
 #outer-frame::after {
-  left: 20px;
+  left: 15px;
 }
 
 #news-title {
@@ -1942,10 +2059,10 @@ textarea {
   border: solid 1px #715D9C;
   border-radius: 20px;
   height: 30px;  
-  margin: 10px;
+  margin: 10px 5px;
   padding: 5px 10px;
   align-content: center;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 
@@ -2050,6 +2167,10 @@ transition: 0.3s all;
   width: 100%;
 }
 
+#category-tab label:has(:checked) {
+  background-color: #23C7D6;
+}
+
 .kiji {
   display: flex;
   
@@ -2094,10 +2215,11 @@ transition: 0.3s all;
   margin: 20px auto 0 auto;
   text-align: center;
 }
-/* ----------------------------#bookingtime, #bookingday----- */
+/* ----------------------------#bookingday----- */
 #booking-top {
   text-align: center;
   margin: 0 auto;
+  
 }
 
 .box-booking {
@@ -2120,6 +2242,7 @@ transition: 0.3s all;
 }
 
 
+/* :::プラグイン bookingpackage style::: */
 .box-booking::after {
   right: 15px;
 }
@@ -2133,5 +2256,20 @@ transition: 0.3s all;
   text-align: center;
   margin: 10px auto;
 }
+
+#booking-package-locale-ja, #booking-package-id-1, #booking-package_inputFormPanel{
+  width: 330px;
+  margin: 0 auto;
+
+}
+
+.radio_title {
+  font-size: 14px;
+}
+
+.title_in_form {
+  color: red;
+}
+
 
 }

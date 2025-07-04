@@ -42,7 +42,7 @@
               <hr>
             </div>
             <div id="kamoku-link">
-              <div class="news-link"><a href="clinicguide.html">▶ 詳細はこちら</a></div>
+              <div class="kamokulink"><a href="<?php echo home_url(); ?>/clinicguide/#kamoku-syousai">▶ 詳細はこちら</a></div>
             </div>
           </div>    
             <!-- 特徴 01-02 -->

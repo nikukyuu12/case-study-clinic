@@ -4,7 +4,21 @@
             <a href="<?php echo esc_url(home_url('/')); ?>" id="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo2.png" alt="ロゴ" class="logo"></a>
             <P>〒105-0001<br>東京都港区虎ﾉ門1丁目3-1</P>
             <P>TEL 00-0000-0000</P>
-            <p>休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p>
+            <!-- <p>休診日  水・日/土曜 午前のみ<br>午後9：30－13：00<br>午後 14：00－18：30</p> -->
+
+            <table border="2" >
+            <tr>
+              <th>診察時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th>  
+            </tr>
+            <tr>
+              <td>9:00~13:00</td><td>●</td><td>●</td><td><span>休</span></td><td>●</td><td>●</td><td>●</td>
+            </tr>
+            <tr>
+              <td>14:00~18:30</td><td>●</td><td>●</td><td><span>休</span></td><td>●</td><td>●</td><td><span>休</span></td>
+            </tr>
+          </table>
+
+
           </div>
           <div id="map">
             <p class="parking">駐車場ございません<br>近隣のパーキングをご利用ください。</p>
@@ -16,5 +30,7 @@
       
 
     </main>
+
+    <?php wp_footer(); ?>
   </body>
 </html>
